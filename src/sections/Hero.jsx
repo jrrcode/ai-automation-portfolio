@@ -9,7 +9,7 @@ export function Hero() {
 
   return (
     <motion.section
-      className="min-h-[78vh] scroll-mt-24 pt-8 lg:flex lg:min-h-[calc(100vh-12rem)] lg:items-center lg:pt-0"
+      className="min-h-[68vh] scroll-mt-24 pt-4 sm:min-h-[78vh] sm:pt-8 lg:flex lg:min-h-[calc(100vh-12rem)] lg:items-center lg:pt-0"
       initial="hidden"
       animate="visible"
       variants={stagger}
@@ -17,7 +17,7 @@ export function Hero() {
       <div>
         <motion.p
           variants={fadeUp}
-          className="inline-flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.2em] text-accent"
+          className="inline-flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.18em] text-accent sm:text-sm sm:tracking-[0.2em]"
         >
           <span className="relative flex size-3">
             <span className={`absolute inline-flex h-full w-full animate-ping rounded-full ${availabilityColor} opacity-50`} />
@@ -27,15 +27,15 @@ export function Hero() {
         </motion.p>
         <motion.h2
           variants={fadeUp}
-          className="mt-6 max-w-3xl text-4xl font-bold tracking-tight text-slate-50 sm:text-5xl"
+          className="mt-5 max-w-3xl text-4xl font-bold tracking-tight text-slate-50 sm:mt-6 sm:text-5xl"
         >
           {profile.headline}
         </motion.h2>
-        <motion.p variants={fadeUp} className="mt-6 max-w-2xl text-lg leading-8 text-mist">
+        <motion.p variants={fadeUp} className="mt-5 max-w-2xl text-base leading-8 text-mist sm:mt-6 sm:text-lg">
           I help founders, operators, and service businesses connect the tools they already use:
           n8n, Airtable, Google Sheets, Gmail, Typeform, APIs, and AI assistants.
         </motion.p>
-        <motion.div variants={fadeUp} className="mt-9 flex flex-col gap-4 sm:flex-row">
+        <motion.div variants={fadeUp} className="mt-8 flex flex-col gap-3 sm:mt-9 sm:flex-row sm:gap-4">
           <a
             href="#projects"
             className="focus-ring inline-flex items-center justify-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-bold text-ink transition hover:-translate-y-1 hover:bg-mint"
